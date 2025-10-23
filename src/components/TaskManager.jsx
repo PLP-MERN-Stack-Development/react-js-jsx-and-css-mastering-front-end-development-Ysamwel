@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useLocalStorage from "../hooks/useLocalStorage";
+import useLocalStorage from "../Hooks/useLocalStorage";
 import Button from "./Button";
 
 export default function TaskManager() {
