@@ -1,16 +1,107 @@
-# React + Vite
+#  Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **React application** built with **Vite**, **Tailwind CSS**, and **React Router**.  
+This project demonstrates component-based architecture, state management with hooks, API integration, and clean UI design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Tech Stack
+-  **Vite** — fast development and build tool  
+-  **React** — for building user interfaces  
+-  **Tailwind CSS** — utility-first CSS framework  
+-  **React Router DOM** — client-side routing  
+-  **LocalStorage & Custom Hooks** — for persistence  
+-  **Dark/Light Theme** — via Tailwind’s dark mode  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Project Structure
 
-## Expanding the ESLint configuration
+week3-app/
+┣ src/
+┃ ┣ components/
+┃ ┃ ┣ Button.jsx
+┃ ┃ ┣ Card.jsx
+┃ ┃ ┣ Navbar.jsx
+┃ ┃ ┣ Footer.jsx
+┃ ┃ ┗ Layout.jsx
+┃ ┣ pages/
+┃ ┃ ┣ Home.jsx
+┃ ┃ ┣ Tasks.jsx
+┃ ┃ ┗ About.jsx
+┃ ┣ hooks/
+┃ ┃ ┗ useLocalStorage.js
+┃ ┣ context/
+┃ ┃ ┗ ThemeContext.jsx
+┃ ┣ App.jsx
+┃ ┣ main.jsx
+┃ ┗ index.css
+┣ package.json
+┣ tailwind.config.js
+┗ vite.config.js
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Setup Instructions
+
+###  Clone the Repository
+```bash
+git clone <your-repo-url>
+cd week3-app
+```
+
+## Install Dependencies
+npm install
+
+## Run the Development Server
+npm run dev
+The app will be available at http://localhost:5173/
+
+## Build for Production
+npm run build
+
+## Features
+# Component Architecture
+
+Reusable UI components: Button, Card, Navbar, Footer, Layout
+
+Props for customization and flexibility
+
+## State Management
+
+Add, delete, and complete tasks
+
+Filter tasks: All | Active | Completed
+
+Persistent state with custom useLocalStorage hook
+
+## API Integration
+
+Fetch and display data from JSONPlaceholder
+
+Handle loading and error states
+
+Search and filter API results
+
+## Tailwind Styling
+
+Responsive layouts for mobile, tablet, and desktop
+
+Theme toggle (light/dark)
+
+Smooth animations and transitions
+
+## Preview
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+
+
+## Author
+
+Yvonne Samwel 
+Software Engineer | Cloud Enthusiast
+
+
+## License
+
+This project is licensed under the MIT License — feel free to use and modify it.
