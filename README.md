@@ -90,6 +90,8 @@ Theme toggle (light/dark)
 
 Smooth animations and transitions
 
+[Live link] (https://taskmanager-wn6k.vercel.app/)
+
 ## Preview
 ![alt text](image.png)
 ![alt text](image-1.png)
